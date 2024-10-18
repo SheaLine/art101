@@ -1,52 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+  <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 4 - Pseudocoding and Problem-solving</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
-</head>
-<body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Lab X - Subject/Topic</h1>
-			<div class="minor-section">
-					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
-			</div>
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			<div class="minor-section">
-					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
-			</div>
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <!-- Lab-specifc CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css" />
 
-			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
-			</div>
+    <!-- load jQuery library to make javascript easier (must be above our lab js)-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Link to javascript file - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+  </head>
+  <body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+      <section>
+        <h1>Lab 4 - Pseudocoding and Problem-solving</h1>
+        <div class="minor-section">
+          <h2>Challenge</h2>
+          <p>
+            The challenge for this lab was to start thinking about how you would
+            program something using javascript. Programs are just a collection
+            of very precise instructions and this lab helps us form these
+            instruction.
+          </p>
+        </div>
 
-			<div class="minor-section">
-					<h2>Results</h2>
-					<div id="output"></div>
-			</div>
-		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-		</nav>
-	</main>
-</body>
+        <div class="minor-section">
+          <h2>Problems</h2>
+          <p>
+            The biggest problem that occurred for me this lab was realizing that
+            I was calculating the timezone difference of spain to santa cruz
+            wrong this whole time, so I was essentially turning this assignment
+            in late without knowing. I have programming experience, so writing
+            the pseudocode was not too difficult for me.
+          </p>
+        </div>
+
+        <div class="minor-section">
+          <h2>Reflection</h2>
+          <p>
+            I think that this assignment went pretty well. I have programmed a
+            rock paper scissors program before in C++ as well as a tic-tac-toe
+            game, so I have experience when thinking about how to complete these
+            tasks. It has been a long time though so I guess the hardest part
+            was remembering how I can achieve a working program. In my
+            experience it is always best to start with pseudocode to get your
+            thoughts on paper before you start to write code.
+          </p>
+        </div>
+
+        <div class="minor-section">
+          <h2>Results</h2>
+          <div id="output"></div>
+          <h2>Pseudocode for making guacamole</h2>
+          <ol>
+            <!-- Pseudocode for making guacamole -->
+            <li>Gather the ingredients.</li>
+            <li>Cut the avocadoes in half.</li>
+            <li>Remove the pits from the avocadoes</li>
+            <li>Scoop the avocadoes into a bowl.</li>
+            <li>Mash the avocadoes.</li>
+            <li>Add the lime juice.</li>
+            <li>Add chopped cilantro.</li>
+            <li>Add chopped onions.</li>
+            <li>Add chopped tomatoes.</li>
+            <li>Add salt and pepper to taste.</li>
+            <li>Mix all the ingredients together.</li>
+            <li>Serve the guacamole with tortilla chips.</li>
+          </ol>
+
+          <h2>Pseudocode for programming Rock, Paper, Scissors</h2>
+          <ol>
+            <!-- Pseudocode for programming Rock, Paper, Scissors -->
+            <li>Display game instructions on the screen.</li>
+            <li>Initialize the Game once the player picks settings.</li>
+            <li>
+              Collet player input (have the player choose rock paper or
+              scissors.)
+            </li>
+            <li>
+              Randomly generate the computer input (rock paper, or scissors.)
+            </li>
+            <li>Determine the winner, check winning conditions.</li>
+            <li>update the score</li>
+            <li>
+              Repeat steps 3 - 6 until the player settings are met, (best out of
+              3, 5, 1)
+            </li>
+          </ol>
+
+          <h2>
+            Pseudocode for programming Rock, Paper, Scissors Series (javascript
+            comments)
+          </h2>
+
+          <pre>
+ 			Print the game instructions to the screen
+			console.log("Press 1 for best out of 1, 3 for best out of 3, or 5 for best out of 5.");
+			while series is not over
+			  get player input, 1 for rock, 2 for paper, 3 for scissors
+			  print rock, paper,  or scissors
+			  get computer input
+			  print rock, paper, or scissors
+			  determine winner
+			  update score
+			  print the score
+			print the winner of the series</pre
+          >
+        </div>
+      </section>
+      <nav id="links">
+        <!-- Put links to other pages (including the homepage) here. -->
+        <ul>
+          <li>
+            <button onclick="location.href='../index.html'">Home</button>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
 </html>
