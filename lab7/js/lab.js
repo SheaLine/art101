@@ -3,7 +3,7 @@
 // Date: 10/28/2024
 
 
-//function to sort username
+//function to sort/shuffle username
 function sortUserName(username) {
   if (!username) { //if username is empty or null return empty string
     return "";
