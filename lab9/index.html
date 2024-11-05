@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 9 - Libraries & jQuery</title>
+
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <!-- Lab-specifc CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+  </head>
+  <body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+      <section>
+        <h1>Lab 9 - Libraries & jQuery</h1>
+        <div class="minor-section" id="challenge">
+          <h2>Challenge</h2>
+          <p>
+            The challenge of this lab was to create a button that would change
+            the style of the section that it is in using JQuery.
+          </p>
+        </div>
+
+        <div class="minor-section" id="problems">
+          <h2>Problems</h2>
+          <p>
+            I didn't have many problems with this lab, I originally accessed the
+            parent of the button by doing this:
+            "this.parentElement.classList.toggle("special");", but after reading
+            the rest of the assignment I learned you could do this:
+            "$(this).parent().toggleClass("special");" which seems shorter and
+            easier to understand, so I changed it.
+          </p>
+        </div>
+
+        <div class="minor-section" id="reflection">
+          <h2>Reflection</h2>
+          <p>
+            This lab was pretty straight forward for me, I was able to get it
+            done in a short amount of time. I learned a more abut JQuery and how
+            to access certain elements in the DOM. I also used this lab to
+            enhance my css, by making my buttons a little more interesting. I
+            enjoyed figuring out how to use DRY when writing my js.
+          </p>
+        </div>
+
+        <div class="minor-section" id="results">
+          <h2>Results</h2>
+          <div class="output">Nothing is special.<br /></div>
+        </div>
+      </section>
+      <nav id="links">
+        <!-- Put links to other pages (including the homepage) here. -->
+        <ul>
+          <li>
+            <button onclick="location.href='../index.html'">Home</button>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
