@@ -11,8 +11,7 @@ sections.forEach(section => {
 });
 
 $(".special-btn").click(function() {
-    console.log($(".special").length);
-
+    
     // toggles special class on parent element of button could also do this: this.parentElement.classList.toggle("special");
     $(this).parent().toggleClass("special");
 
@@ -29,4 +28,5 @@ $(".special-btn").click(function() {
         });
         $(".output").html(specialText); // output the special text
     }
+    console.log($(".special").length);
 });
