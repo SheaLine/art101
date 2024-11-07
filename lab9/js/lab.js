@@ -4,7 +4,6 @@
 
 
 // Add buttons to each section
-console.log($(".special").length);
 const sections = ["#challenge", "#problems", "#reflection", "#results"]; // array of section ids
 sections.forEach(section => {
     $(section).append("<button class='special-btn'>Make Special</button>"); // adds button to each section
