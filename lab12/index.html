@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 11 - JavaScript Events and Forms</title>
+
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <!-- Lab-specifc CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+  </head>
+  <body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+      <section>
+        <h1>Lab 11 - JavaScript Events and Forms</h1>
+        <div class="minor-section" id="challenge">
+          <h2>Challenge</h2>
+          <p>
+            The challenge of this lab was to use if statements to print out a
+            value based on an input.
+          </p>
+        </div>
+
+        <div class="minor-section" id="problems">
+          <h2>Problems</h2>
+          <p>
+            I didn't have any problems with this lab. Everything pretty much
+            worked first try and it was a smooth and fun process.
+          </p>
+        </div>
+
+        <div class="minor-section" id="reflection">
+          <h2>Reflection</h2>
+          <p>
+            I really enjoyed this lab. I felt like going above and beyond this
+            time because I am struggling with my code in another class and
+            wanted to feel a little better about my skills. I first did the base
+            part of the lab and it only took about 10 minutes. So I then got
+            inspiration from Wes's website and decided to use the same assets
+            for the hat and thought bubble. Once I got the front end looking
+            good, I used the same base logic from task 2 to get the bubble
+            showing up when its supposed to. Once that was working I added the
+            house array and got rid of the if statements. I then finally added
+            the recommended hash function to make the sorting more interesting.
+            I am happy with how this turned out because it didn't make me feel
+            stupid like other projects can and I love Harry Potter!!
+          </p>
+        </div>
+        <div class="minor-section" id="results">
+          <h2>Welcome To Hogwarts</h2>
+          <div id="output-box">
+            <div class="hat"><img src="./img/sortinghat.png" /></div>
+            <div id="output">
+              <h1 id="house">House</h1>
+              <div id="heading">The sorting hat is never wrong!</div>
+              <p id="description"></p>
+              <div id="credits">
+                Hogwarts house descriptions can be found at
+                <a
+                  href="https://iamjustdandi.wordpress.com/2015/11/06/those-in-between-hogwarts-houses/"
+                  >iamjustdandi</a
+                >
+                (I did not write these descriptions)
+              </div>
+            </div>
+            <div id="tail-box"><img src="./img/dialog-tail2.svg" /></div>
+          </div>
+          <span id="input"
+            >Please enter your FULL name for sorting:
+            <input type="text" id="input-box" />
+            <button id="submit">Submit</button>
+          </span>
+        </div>
+      </section>
+      <nav id="links">
+        <!-- Put links to other pages (including the homepage) here. -->
+        <ul>
+          <li>
+            <button onclick="location.href='../index.html'">Home</button>
+            <button onclick="location.href='./js/lab.js'">JS Source</button>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
