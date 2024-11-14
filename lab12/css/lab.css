@@ -26,6 +26,7 @@
 }
 #output-box {
   margin-top: 100px;
+  position: relative;
 }
 #input {
   margin-top: 120px;
@@ -34,7 +35,7 @@
 
 #output {
   position: absolute;
-  left: 153px;
+  left: -184.9%;
   padding: 50px;
   border-radius: 150px;
   border: solid 2px black;
@@ -59,8 +60,8 @@ p {
 
 #tail-box {
   position: absolute;
-  bottom: 40px;
-  left: 755px;
+  bottom: 40%;
+  left: 6%;
   width: 100px;
   transform: scaleX(-1);
   display: none;
