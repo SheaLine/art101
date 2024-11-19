@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 13 - Loops</title>
+
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <!-- Lab-specific CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+  </head>
+  <body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+      <section>
+        <h1>Lab 13 - Loops</h1>
+        <div class="minor-section" id="challenge">
+          <h2>Challenge</h2>
+          <p>
+            The challenge of this lab is to use a loop to map a phrase to a
+            certain number and print the results to the page.
+          </p>
+        </div>
+
+        <div class="minor-section" id="problems">
+          <h2>Problems</h2>
+          <p>
+            There was a lot of trial and error with this lab. Using
+            console.log() and the browser debug tools helped me see what exactly
+            was happening under the hood.
+          </p>
+        </div>
+
+        <div class="minor-section" id="reflection">
+          <h2>Reflection</h2>
+          <p>
+            This lab was a little more complex than the other labs, but it was
+            still fairly straight forward. The main issues I was having was
+            figuring out how to get the data into an object that had the number
+            and the text for each number. I made the object look like this "{2:
+            "Fizz", 5: "Buzz", 10: "Boom"}" for example. Once I had that object
+            it wasn't too hard to loop over it and append the output string to
+            show the correct text.
+          </p>
+        </div>
+        <div class="minor-section" id="results">
+          <h2>Results</h2>
+          <div id="program-container">
+            <h2>FizzBuzzBoom!!</h2>
+            <span
+              >Where should we stop?
+              <input type="number" min="0" max="1000" id="stop" /> <br />
+              What numbers should print what?</span
+            >
+            <table>
+              <tbody>
+                <tr>
+                  <th>Number</th>
+                  <th>Prints What?</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" min="0" max="23" id="num0" />
+                  </td>
+                  <td><input type="text" id="text0" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" min="0" max="23" id="num1" />
+                  </td>
+                  <td><input type="text" id="text1" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" min="0" max="23" id="num2" />
+                  </td>
+                  <td><input type="text" id="text2" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" min="0" max="23" id="num3" />
+                  </td>
+                  <td><input type="text" id="text3" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" min="0" max="23" id="num4" />
+                  </td>
+                  <td><input type="text" id="text4" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <button id="run">Run</button>
+          </div>
+          <div id="output-container">
+            <h2>Output</h2>
+            <div id="output">Run the program to see output...</div>
+          </div>
+        </div>
+      </section>
+      <nav id="links">
+        <!-- Put links to other pages (including the homepage) here. -->
+        <ul>
+          <li>
+            <button onclick="location.href='../index.html'">Home</button>
+            <button onclick="location.href='./js/lab.js'">JS Source</button>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
