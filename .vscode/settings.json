@@ -1,8 +1,4 @@
 {
-    "cSpell.words": [
-        "Gryffindor",
-        "Hufflepuff",
-        "Ravenclaw",
-        "Slytherin"
-    ]
+  "cSpell.words": ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"],
+  "liveServer.settings.port": 5501
 }

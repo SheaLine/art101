@@ -36,32 +36,9 @@ function mapNumberObject(maxNums, object) {
   }
 }
 
-function isAtLeastOnePairFilled() {
-  for (let i = 0; i <= maxNumbers; i++) {
-    let numVal = $("#num" + i).val();
-    let textVal = $("#text" + i).val();
-    console.log(`Checking pair ${i}: numVal="${numVal}", textVal="${textVal}"`);
-    if (numVal && textVal) {
-      console.log(`number: ${numVal} text: ${textVal}`);
-      return true;
-    }
-  }
-  return false;
-}
-
 $("#run").click(function () {
   $("#output").empty();
-  //check that max has a value and at least one number/text pair
-  if($("#stop").val() == ""){
-    $("#output").text("Please enter a max number");
-    return;
-  } else if (!isAtLeastOnePairFilled()) {
-    $("#output").text("Please enter at least one number/text pair");
-    return;
-  }else{
-    let object = getNumberObject();
-    let max = $("#stop").val();
-    mapNumberObject(max, object);
-  }
-  
+  let object = getNumberObject();
+  let max = $("#stop").val();
+  mapNumberObject(max, object);
 });
